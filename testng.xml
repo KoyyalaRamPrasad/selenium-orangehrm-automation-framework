@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="OrangeHRM Suite">
+
+    <listeners>
+        <listener class-name="com.ram.listeners.TestListener"/>
+    </listeners>
+
+    <test name="Login Tests">
+
+        <classes>
+            <class name="com.ram.tests.LoginTest"/>
+            <class name="com.ram.tests.LogoutTest"/>
+        </classes>
+
+    </test>
+
+</suite>

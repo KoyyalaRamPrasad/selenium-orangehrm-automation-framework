@@ -1,4 +1,5 @@
 package com.ram.base;
+import com.ram.utils.ConfigReader;
 
 import java.time.Duration;
 
@@ -14,7 +15,7 @@ public class BaseTest {
 	driver = new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+	driver.get(ConfigReader.getProperty("url"));
 	
 	
 	}
